@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Ledger — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true">LL</span>
+    <div>
+      <h1>Leonida Ledger</h1>
+      <p class="subtitle">Grand Theft Auto VI — trophy guide &amp; tracker · 55 trophies · offline</p>
+    </div>
+  </div>
+  <div class="progress-wrap" id="progress-wrap" title="Your earned trophies">
+    <div class="progress-numbers"><strong id="earned-count">0</strong><span> / 55 earned</span></div>
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+    <div class="progress-pct" id="progress-pct">0%</div>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Guide sections">
+  <button class="tab active" data-tab="guide" role="tab" aria-selected="true" type="button">Guide &amp; Tracker</button>
+  <button class="tab" data-tab="roadmap" role="tab" aria-selected="false" type="button">Platinum Roadmap</button>
+  <button class="tab" data-tab="missables" role="tab" aria-selected="false" type="button">Missables</button>
+  <button class="tab" data-tab="about" role="tab" aria-selected="false" type="button">About &amp; Sources</button>
+</nav>
+
+<main>
+  <section id="tab-guide" class="panel active" role="tabpanel">
+    <div class="controls">
+      <label class="search-label">Search <input id="search" type="search" placeholder="Trophy name or description…" autocomplete="off"></label>
+      <label>Kind
+        <select id="kind-filter">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="missable">Missable</option>
+          <option value="collectibles">Collectibles</option>
+          <option value="activities">Activities</option>
+          <option value="robbery">Robbery</option>
+          <option value="money">Money</option>
+          <option value="world">World &amp; exploration</option>
+          <option value="completion">Completion</option>
+        </select>
+      </label>
+      <label>Grade
+        <select id="grade-filter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label>Show
+        <select id="earned-filter">
+          <option value="all">All trophies</option>
+          <option value="earned">Earned only</option>
+          <option value="remaining">Remaining only</option>
+        </select>
+      </label>
+      <label class="switch-label"><input id="spoiler-toggle" type="checkbox" checked> Spoiler mode <span class="hint">hide story trophies until earned</span></label>
+      <div class="data-buttons">
+        <button id="export-btn" type="button">Export progress</button>
+        <label class="import-btn">Import progress <input id="import-file" type="file" accept="application/json,.json"></label>
+        <button id="reset-btn" type="button" class="danger">Reset</button>
+      </div>
+    </div>
+    <p class="result-line" id="result-line">Showing 55 of 55 trophies</p>
+    <div class="guide-layout">
+      <ul class="trophy-list" id="trophy-list" aria-label="Trophy list"></ul>
+      <aside class="detail" id="detail" aria-live="polite">
+        <p class="detail-empty">Select a trophy to read its guide, its sources and its place on the road to the platinum.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section id="tab-roadmap" class="panel" role="tabpanel">
+    <h2>The road to the platinum</h2>
+    <p class="lede">Four stages, in order. Finish the story first, then the side content, then the grinds — the collectibles and the 100% checklist come last, when the whole map is open.</p>
+    <div id="roadmap" class="roadmap"></div>
+  </section>
+
+  <section id="tab-missables" class="panel" role="tabpanel">
+    <h2>Missable trophies</h2>
+    <p class="lede">Only one trophy on the whole list can be missed. Everything else can be earned after the story, in free roam.</p>
+    <div id="missables" class="missables"></div>
+  </section>
+
+  <section id="tab-about" class="panel" role="tabpanel">
+    <h2>About this guide</h2>
+    <p>Leonida Ledger is a free, open-source, offline guide and tracker for the 55 PlayStation 5 trophies of Grand Theft Auto VI. It runs entirely from its own files — no network, no account, no tracking. Your progress is saved in this browser only (localStorage), and you can export it to a file and import it back.</p>
+    <h3>Where the facts come from</h3>
+    <ul>
+      <li>Trophy names, descriptions, grades and counts as PlayStation publishes them: the Exophase trophy list, cross-checked with PSNProfiles.</li>
+      <li>How-to guidance is written in this guide's own words for this entry, and each trophy's guide names its sources beside it. No guide text is copied from another guide.</li>
+      <li>Where a location or step could not be pinned down from the official descriptions, the guide says so plainly instead of inventing one.</li>
+    </ul>
+    <h3>Sources used</h3>
+    <ul>
+      <li>Exophase — GTA VI trophy list (names, descriptions, grades, rarity)</li>
+      <li>PSNProfiles — GTA VI trophies (counts, cross-check)</li>
+      <li>KeenGamer — GTA 6 trophy guide &amp; platinum roadmap (missable warning, grind counts)</li>
+    </ul>
+    <p class="fineprint">Not affiliated with Rockstar Games. No Rockstar logo, official artwork, box art or game screenshots are used here; the look is this guide's own.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Ledger · GTA VI trophy guide &amp; tracker · Works offline · Progress stays in your browser</p>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
